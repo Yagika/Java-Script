@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    /*1*/
+    let arr = [];
+    let arrsize = 10;
+    let result = 0;
+    for (let i = 0; i < arrsize; i++) {
+        arr[i] = Math.floor(Math.random() * 100);
+        result += arr[i];
+    }
+    console.log(arr);
+    console.log(result);
+
+    /*2*/
+    let book0 = {
+        назва: 'Adventure time',
+        кілкістьсторінок: 503,
+        жанр: 'fantasy',
+    }
+    console.log(book0);
+
+    /*3*/
+    let book1 = {
+        назва: 'Tomas',
+        кілкістьсторінок: 349,
+        жанр: 'horror',
+        автори: 'Хосе'
+    }
+    console.log(book1);
+
+    /*4*/
+    let book = [book1, book2 = {
+        назва: 'Silense',
+        кілкістьсторінок: 607,
+        жанр: 'horror',
+        автори: 'Hugo'
+    },
+        book3 = {
+            назва: 'Loyal',
+            кілкістьсторінок: 543,
+            жанр: 'comedy',
+            автори: 'Armen'
+        }
+    ]
+    console.log(book[0]);
+    console.log(book[1]);
+    console.log(book[2]);
+
+    /*5*/
+    let height = 23;
+    let width = 10;
+    let s;
+    s = (width * height)
+    console.log(s + ' см^2')
+
+    /*6*/
+    let heightC = 10;
+    let dC = 4;
+    const PI = 3.14;
+    let v;
+    v = (PI * (dC / 2) * (dC / 2) * heightC)
+    console.log(v.toFixed(1) + ' м^3')
+
+    /*7*/
+    let n = 3;
+    let m = 4;
+    let k;
+    k = (Math.sqrt(Math.pow(n, 2) + Math.pow(m, 2)))
+    console.log(k)
+
+</script>
+</body>
+</html>
