@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    let time = Math.floor(Math.random() * 59);
+    if (time >= 0 && time < 15) {
+        document.write('Перша чверть години ')
+    } else if (time >= 15 && time < 30) {
+        document.write('Друга чверть години ')
+    } else if (time >= 30 && time < 45) {
+        document.write('Третя чверть години ')
+    } else if (time >= 45 && time <= 59) {
+        document.write('Четверта чверть години ')
+    }
+    console.log(time)
+
+    let day = Math.floor(1 + Math.random() * 31);
+    if (day >= 0 && day <= 10) {
+        document.write('Перша декада')
+    } else if (day > 10 && day <= 20) {
+        document.write('Друга декада')
+    } else if (day > 20 && day <= 31) {
+        document.write('Третя декада')
+    }
+    console.log(day)
+
+    let test = true;
+    test === !true ? console.log('Вірно') : console.log('Неправильно');
+    let test1 = false;
+    test1 === !true ? console.log('Вірно') : console.log('Неправильно');
+
+    let a = 1;
+    a < 0 || a > 0 ? console.log('Вірно') : console.log('Невірно');
+    let a1 = 0;
+    a1 < 0 || a1 > 0 ? console.log('Вірно') : console.log('Невірно');
+    let a2 = -3;
+    a2 < 0 || a2 > 0 ? console.log('Вірно') : console.log('Невірно');
+
+    let key = 'Среда';
+    switch (key) {
+        case 'Понедельник':
+            console.log('Пойти в кафе');
+            break;
+        case 'Вторник':
+            console.log('Скупиться в ТЦ');
+            break;
+        case 'Среда':
+            console.log('Отвести собаку к ветеринару');
+            break;
+        case 'Четверг':
+            console.log('Сходить в парикмахерскую');
+            break;
+        case 'Пятница':
+            console.log('Получить направление к дерматологу');
+            break;
+        case 'Суббота':
+            console.log('Убрать дома');
+            break;
+        case 'Воскресенье':
+            console.log('Выполнить домашнюю работу');
+            break;
+        default:
+            console.log('???');
+    }
+
+    let year = Math.floor(Math.random() * 5000);
+    year % 4 ? console.log('Невысокосный') : console.log('Высокосный');
+    console.log(year);
+
+    let txt = prompt('Яка "офційна" назва JavaScript?');
+    if (txt === "ECMAScript") {
+        console.log('Правильно!');
+    } else {
+        console.log('Не знаете? ECMAScript!');
+    }
+</script>
+</body>
+</html>
