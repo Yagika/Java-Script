@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    //1
+    let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
+    if (friends.length >= 3) {
+        console.log('Великий масив');
+    } else {
+        console.log('Маленький масив');
+    }
+
+    //2
+    let nums = [4, 6, 8];
+    if ((nums[1] > nums[2] && nums[1] < nums[0]) || (nums[1] < nums[2] && nums[1] > nums[0])) {
+        console.log('Число ' + nums[1] + ' находится посередине');
+    } else if ((nums[0] > nums[2] && nums[1] > nums[0]) || (nums[0] < nums[2] && nums[1] < nums[0])) {
+        console.log('Число ' + nums[0] + ' находится cлева');
+    } else if ((nums[2] > nums[1] && nums[2] < nums[0]) || (nums[2] < nums[1] && nums[2] > nums[0])) {
+        console.log('Число ' + nums[2] + ' находится cправа');
+    }
+
+    // //3
+    // let result;
+    // (a + b < 4) ? result = 'Мало' : result = 'Багато';
+
+    //4
+    let nuk = Math.floor(-100 + Math.random()*201);
+    console.log(nuk);
+    nuk > 0 ? console.log('Положительное') : nuk < 0 ? console.log('Отрицательное') : console.log('Нуль');
+
+</script>
+</body>
+</html>
