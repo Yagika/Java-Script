@@ -2,7 +2,7 @@
 // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
 let cutString1 = (str, n) => {
     let arr = [];
-    for (let i = 0; i < str.length; i+=3) {
+    for (let i = 0; i < str.length; i+=n) {
         let sub = str.substr(i, n);
         arr.push(sub);
     }
