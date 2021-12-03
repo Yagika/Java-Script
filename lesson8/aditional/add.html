@@ -50,7 +50,9 @@
 
     function recall(startElement) {
         if (startElement.classList.length !== 0) {
-            arr.push(startElement.classList);
+            for (const cl of startElement.classList) {
+                arr.push(cl);
+            }
         }
         if (startElement.children.length) {
             for (const element of startElement.children) {
@@ -58,6 +60,7 @@
             }
         }
     }
+
     recall(document.body);
     console.log(arr);
 </script>
