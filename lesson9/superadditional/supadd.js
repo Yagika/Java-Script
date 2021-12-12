@@ -72,13 +72,21 @@ function recall(startElement) {
         document.body.appendChild(divel);
         for (const element of startElement) {
             let div1 = document.createElement('div');
-            div1.innerText = element;
             divel.appendChild(div1);
-            console.log(element);
+            rec(element);
+
+            function rec(element) {
+                for (const key in element) {
+                    if (typeof element[key] === 'object') {
+                        rec(element[key]);
+                    } else {
+                        div1.append(`${key}: ${element[key]}; `);
+                    }
+                }
+            }
         }
     }
 }
-
 recall(users);
 
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
@@ -92,8 +100,15 @@ function recall1(startElement) {
             divel.appendChild(div1);
             for (const key in element) {
                 let div = document.createElement('div');
-                div.innerText = (`${key}: ${element[key]}`);
                 div1.appendChild(div);
+                if (typeof element[key]==='object'){
+                    div.append(key+': ')
+                    for (const index in element[key]){
+                        div.append(`${index}: ${element[key][index]}; `);
+                    }
+                }else{
+                div.innerText = (`${key}: ${element[key]}`);
+                }
             }
         }
     }
