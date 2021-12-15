@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .form {
+            background: paleturquoise;
+            width: 90%;
+            height: 600px;
+            margin: 10px;
+        }
+
+        .toy {
+            height: 185px;
+            margin: 5px;
+            width: 98%;
+            background: #fcd8f6;
+        }
+.btns{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(190, 190, 190, 0.37);
+    font-size: 30px;
+    outline: none;
+    margin: 5px;
+}
+.inner{
+    border-radius: 20px;
+}
+i:hover{
+    font-size: 32px;
+}
+.carousel-images{
+    display: flex;
+}
+.carousel-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+position: absolute;
+    margin-top: 180px;
+}
+.carousel{
+    width: 800px;
+}
+    </style>
+</head>
+<body>
+<div class="form hugo cara" id="one">
+    <div class="toy" id="un"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem culpa cum cumque esse id
+        labore minima nobis nostrum odit quis, sed unde! Animi beatae cupiditate pariatur quis sed ut voluptas!</p>
+    </div>
+    <div class="toy" id="deux"><h3>hello okten</h3></div>
+    <div class="toy" id="trois">
+        <ul>
+            <li>hi</li>
+            <li>hello</li>
+            <li>good morning</li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    <input type="checkbox" id="check">
+    <input type="checkbox" id="check1">
+    <input type="checkbox" id="check2">
+</div>
+
+<div class="carousel">
+    <div class="carousel-images">
+        <img src="images/photo_2021-12-14_21-17-16.jpg" alt="photo" class="inner">
+        <img src="images/krasivo-oformlennyj-desert.jpg" alt="photo" class="inner">
+        <img src="images/6baef5dcecac888914269d13c2c5e090-resize_crop_1Xquality_100Xallow_enlarge_0Xw_1200Xh_630.jpg" class="inner" alt="photo">
+        <img src="images/photo_2021-12-14_21-18-08.jpg" class="inner" alt="photo">
+        <img src="images/photo_2021-12-14_21-18-14.jpg" class="inner" alt="photo">
+    <div class="carousel-buttons">
+        <button class="btns" id="old"><i class="fas fa-chevron-left"></i></button>
+        <button class="btns" id="new"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/fb3dac0bb5.js" crossorigin="anonymous"></script>
+<script src="add.js"></script>
+</body>
+</html>
