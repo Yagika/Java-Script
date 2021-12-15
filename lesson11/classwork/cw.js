@@ -41,7 +41,7 @@ for (const user of users) {
 let btn1 = document.createElement('button');
 btn1.innerText = 'favorites';
 btn1.onclick = function () {
-    location.href = 'favorites.html';
+    location.pathname = 'favorites.html';
 }
 document.body.appendChild(btn1);
 let index = localStorage.getItem('favourites');
