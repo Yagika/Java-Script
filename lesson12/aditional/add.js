@@ -52,11 +52,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                                     divel.appendChild(divc);
                                                 }
                                             }
+                                            btn.disabled=true;
                                         })
                                 }
                                 div.appendChild(btn);
                             }
                         }
+                        btnu.disabled=true;
                     })
             }
             divu.appendChild(btnu);

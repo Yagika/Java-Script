@@ -21,7 +21,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             let btn = document.createElement('button');
             btn.classList.add('btn');
             btn.innerText = 'comments';
-            btn.onclick = function (id) {
+            btn.onclick = function () {
                 fetch('https://jsonplaceholder.typicode.com/posts/' + post.id + '/comments')
                     .then(response => response.json())
                     .then(comments => {
@@ -36,6 +36,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                                 divel.appendChild(divc);
                             }
                         }
+                        btn.disabled=true;
                     })
             }
             div.appendChild(btn);
