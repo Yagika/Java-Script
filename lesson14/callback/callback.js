@@ -8,64 +8,81 @@
 // Переглянути серіал-4с
 // Піти спати-1с
 function one(callback) {
-        setTimeout(() => {
-            console.log('Прокинутись');
-            callback();
-        }, 300)
+    setTimeout(() => {
+        console.log('Прокинутись');
+        callback();
+    }, 300)
 }
 
 function two(callback) {
-        setTimeout(() => {
-            console.log('Поснідати');
-            callback();
-        }, 1000)
+    setTimeout(() => {
+        console.log('Поснідати');
+        callback();
+    }, 1000)
 }
 
 function three(callback) {
-        setTimeout(() => {
-            console.log('Піти в душ');
-            callback();
-        }, 500)
+    setTimeout(() => {
+        console.log('Піти в душ');
+        callback();
+    }, 500)
 }
 
 function four(callback) {
-        setTimeout(() => {
-            console.log('Дочекатись автобус')
-            callback();
-        }, 3000)
+    setTimeout(() => {
+        console.log('Дочекатись автобус')
+        callback();
+    }, 3000)
 }
 
 function five(callback) {
-        setTimeout(() => {
-            console.log('Пообідати');
-            callback();
-        }, 1000)
+    setTimeout(() => {
+        console.log('Пообідати');
+        callback();
+    }, 1000)
 }
 
 function six(callback) {
-        setTimeout(() => {
-            console.log('Попрацювати');
-            callback();
-        }, 2000)
+    setTimeout(() => {
+        console.log('Попрацювати');
+        callback();
+    }, 2000)
 }
 
 function seven(callback) {
-        setTimeout(() => {
-            console.log('Попити каву');
-            callback();
-        }, 700)
+    setTimeout(() => {
+        console.log('Попити каву');
+        callback();
+    }, 700)
 }
 
 function eight(callback) {
-        setTimeout(() => {
-            console.log('Переглянути серіал');
-            callback();
-        }, 4000)
+    setTimeout(() => {
+        console.log('Переглянути серіал');
+        callback();
+    }, 4000)
 }
 
 function nine() {
-        setTimeout(() => {
-            console.log('Піти спати');
-        }, 1000)
+    setTimeout(() => {
+        console.log('Піти спати');
+    }, 1000)
 }
-one(()=>{two(()=>{three(()=>{four(()=>{five(()=>{six(()=>{seven(()=>{eight(()=>{nine()})})})})})})})})
+
+one(() => {
+    two(() => {
+        three(() => {
+            four(() => {
+                five(() => {
+                    six(() => {
+                        seven(() => {
+                            eight(() => {
+                                nine()
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+})
